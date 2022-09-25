@@ -1,0 +1,17 @@
+body {
+    background-color: lightgrey;
+}
+.notes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+}
+.notes p, #display, #display2 {
+    margin: 1rem;
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.container {
+    border: 2px solid black;
+}
