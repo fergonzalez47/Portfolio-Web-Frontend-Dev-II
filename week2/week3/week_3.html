@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NOTES - WEEK3</title>
+</head>
+<body>
+    <section class="notes">
+        <h3>Chapter 5</h3>
+        <div>
+            <ul>
+                <li>To make an object, it must be declared in braces {}</li>
+                <li>Objects can be placed inside another object!
+                    Values ​​in nested objects can be accessed by referencing each property name
+                    in order using dot or bracket notation</li>
+                <li>Despite being declared const, objects are mutable; that is, they can change or be eliminated</li>
+                <li>The parse() method takes a JSON file and will transform it into a JavaScript object. This is how I can work with that object</li>
+                <li>The stringify() method does the opposite: It transposes the object into a JSON file.</li>
+            </ul>
+        </div>
+        <h3>Chapter 6</h3>
+        <div><ul>
+            <li>Question:
+                I don't fully understand how this method works:
+                            render(target,content,attributes) {
+                                for(const key in attributes){
+                                    target.setAttribute(key, attributes[key]);
+                                }
+                </li>
+            <li>The classList Property is one of the things that I liked most about this chapter; I can add
+                a class to an element without overriding it. This is the example syntax:
+                WonderWoman.classList.add('female warrior');</li>
+            <li>To remove it, use the following: WonderWoman.classList.remove('warrior');
+                Once removed, it will remain with the previous class it had.
+                That property can be useful during real-time form validation, to change
+                the styles of a specific class.</li>
+            <li>Query selectors are a powerful way to select elements on a page; supports even pseudo-selectors
+                to point to a particular element, such as 'li:last-child'</li>
+    
+        </ul></div>
+        <h3>Chapter 7</h3>
+        <div><ul>
+            <li>The event properties: The screenX and screenY properties show the number of pixels from the left and
+                top of the screen respectively where the event took place</li>
+            <li>The clientX and clientY properties show the number of pixels from the left and
+                top of the client that is being used (usually the browser window).
+                The pageX and pageY properties show the number of pixels from the left and top,
+                respectively, where the event took place in the document. This property takes
+                account of whether the page has been scrolled.</li>
+            <li>Playing with them a bit I saw that they mark some kind of coordinate where the event occurred.</li>
+            <li>preventDefault() prevents the object's default behavior from executing.
+                I must think carefully before using preventDefault() to change default
+                behavior because users will expect certain behaviors, and preventing them may cause
+                confusion.</li>
+                <li>There are two
+                    forms of event propagation: bubbling and capturing.
+                    event propagation refers to the order in which the event occurs on each element. For example,
+                    if I hit a li inside an ul, the event is propagated.</li>
+        </ul></div>
+    </section>
+    <section>
+        <h3><a href="activity3.html">See Team activity</a></h3>
+    </section>
+</body>
+</html>
