@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NOTES - WEEK 4</title>
+</head>
+<body>
+    <section class="notes">
+        <h3>Chapter 8 | FORMS</h3>
+        <div>
+            <ul>
+                <li>A form can be referenced as follows:
+                    const form = document.forms.search;</li>
+                <li>"forms" refers to a form, and ".search" is the name attribute of that specific form; <i>However, to avoid problems sometimes about calling properties or
+                    methods of document.form object</i></li>
+                <li>To avoid it,
+                    bracket notation can be used (this is also required if the form name
+                    attribute contains invalid characters, such as spaces or hyphens):
+                    const form = document.forms['search'];</li>
+                <li>
+                    I can also access form controls as in "input" through its
+                    name attributes: <br> const input = form.nombreDeInput;</li>
+            </ul>
+        </div>
+        <h3>Chapter 12 | OOP</h3>
+        <div><ul>
+            <li>It doesn't matter if you've already created multiple instances of a class or prototype; if you decide later
+                add a new method, or a new property, it will be carried over or updated
+                automatically in all instances. This is good for saving space and time.</li>
+            <li>prototypes must only possess properties that all instances can contain. useless
+                write a property that will then be overridden in all instances.</li>
+            <li>want to Built-in Objectsm as an Array, it is better to use
+                an extension of the class and use my own class with own methods.
+                This way I will avoid having problems and behaviors not expected from the program.</li>
+
+    
+    </section>
+    <section>
+        <h2><a href="activity4.html">See Team activity week 4</2></h3>
+    </section>
+</body>
+</html>
