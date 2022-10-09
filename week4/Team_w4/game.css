@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(#212757, #010102);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section {
+    margin: 0 auto;;
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#one, #two, #for, #five {
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+#three, #six {
+    border-bottom: 3px solid white;
+}
+
+#seven, #eight {
+    border-right: 3px solid white;
+}
+
+.marked {
+    text-align: center;
+    font-size: 4em;
+    color: gold;
+
+}
+
+.player {
+    font-size: 3.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blue;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.player2 {
+
+    color: red;
+    font-size: 3.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+/*GRID*/
+
+#player {
+    grid-column: 1/ 3;
+}
+
+.gaming {
+    grid-column: 1/ -1;
+}
+
+.boton{
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+    max-width: 100px;
+    height: 30px;
+}
