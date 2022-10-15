@@ -1,0 +1,30 @@
+body {
+    background: radial-gradient(#ffffff, #8c8cd267 );
+}
+ h3{
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkblue;
+ }
+
+ li {
+    font-size: 1.8em;
+    margin: 1em;
+ }
+
+ h2 {
+    text-align: center;
+    font-size: 2em;
+    background-color: rgba(95, 158, 160, 0.384);
+}
+
+a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: coral;
+}
+a:hover {
+    color: rgb(8, 58, 8);
+    background-color: #9198e5;
+    
+}
