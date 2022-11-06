@@ -1,0 +1,4 @@
+#tableParent tr:hover {
+    background-color: rgba(35, 107, 188, 0.769);
+    cursor: pointer ;
+}
