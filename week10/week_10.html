@@ -24,21 +24,74 @@ if (input.classList.contains(" ? ")) {
     <br>
 }
 <br>
-
 In this code, it is possible to verifiy if the element contains a pseudoclass? for example, the pseudoclass " : invalid " ?
-<br><br>
-            </li>
-<li></li>
-<li></li>
-<li></li>
-        </ul>
+<br><br>   </li>
 
+<li>with the "validity.typeMismatch" method, I can check if the input is
+    correct or not Returns "true" if what is in the input does not match the pattern.</li>
+<li>.
+    email.addEventListener("input", (event) => {
+        <br>
+      if (email.validity.typeMismatch) {
+        <br>
+        email.setCustomValidity("I'm waiting for an email address!");
+        <br>
+        email.reportValidity();
+        <br>
+      } plus {
+        <br>
+        email.setCustomValidity("");
+        <br>
+      } <br>
+    });
+    <br>
+</li>
+<li>in this way I check if the value of the element is correct or not; the setCustomValidity() method
+    is to place and
+    l personalized message. Then the report method is to send it</li>
+
+    <li>It doesn't matter that the form validation on the client side is very good,
+        should always be validated again on the backend and server.</li>
+        <li><I></I> should always help the user to see where he is typing wrong;
+            give clear signals such as focusing on the input box where to correct
+            or completing. The information must be explained.</li>
+        </ul>
+<br>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>fetch() method is a simpler and more logical way to do the same thing as fetch() method did.
+                I prefer to use fetch();</li>
+            <li>
+                <br>
+                how to add multiple HTML files with 
+                <br>
+                fetch() ? const formData = new FormData();
+                <br>
+const photos = document.querySelector('input[type="file"][multiple]');
+<br>
+formData.append('title', 'My Las Vegas Vacation');
+<br>
+let i = 0;
+<br><br>
+for (constant photo of photos.files) {<br>
+  formData.append(`photos_${i}`, photo);<br>
+  I++;<br><br>
+}<br>
+<br><br>
+find('https://example.com/messages', {<br>
+  method: 'POST',<br>
+  body: formData,<br>
+})<br>
+  .then((response) => response.json())<br>
+  .then((result) => {<br>
+    console.log('Success:', result);<br>
+  })<br><br>
+  .catch((error) => {<br>
+    console.error('Error:', error);<br>
+  });<br><br>
+            </li>
+            <li>blob() in fetch, is a file-like object of raw data that is not yet processed and does not mutate.
+                They can render files that are not in the native javasctip language.
+                is an object is simply a collection of bytes containing data stored in a file.</li>
         </ul>
     </section>
     <section><a href="team_activity10/team_activity10.html">team Activity</a></section>
