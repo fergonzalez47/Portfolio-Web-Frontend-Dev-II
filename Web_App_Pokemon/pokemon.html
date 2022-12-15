@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style_pokemon.css">
+    <title>Pokemon</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Pokemón API!!</h1>
+    </header>
+    <main class="main">
+        <section class="firstMenu">
+            <h3>Welcome!</h3>
+            <p>Welcome! In this App you will be able to <span>visualize</span>
+                your favorite pokemons, as well as <span>create</span> and <span>modify</span> teams
+                to your liking! Let's go!</p>
+            <button id="btnGo">Let's go!</button>
+        </section>
+
+    </main>
+
+    <section id="show-teams">
+    </section>
+
+    <div class="modal-container" id="modal">
+        <div class="modal-child">
+            <div class="option-title">
+                <h4 id="title-team"></h4>
+                <p id="go-back">X</p>
+            </div>
+            <div id="options-team"></div>
+            <div id="message"></div>
+            <div class="options-buttons">
+                <button id="save-option">Save</button>
+                <button id="edit-option">Edit Team</button>
+                <button id="delete-option">Delete Team</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/init.js" type="module"></script>
+</body>
+
+</html>
