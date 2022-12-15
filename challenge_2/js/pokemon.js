@@ -282,6 +282,7 @@ export class Pokemon {
             }
         }
 
+        
         this.save.onclick = () => {
             const pokeRemoved = getFromLocalStorage("teams");
             pokeRemoved[indexParent].splice(index + 1 , 1);

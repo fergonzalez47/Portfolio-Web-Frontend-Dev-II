@@ -5,7 +5,7 @@ export function pageMenu() {
     <form class="form">
         <div class="div-name">
           <div>
-             <label for="teamName">Name for the Team: </label>
+            <label for="teamName">Name for the Team: </label>
           </div>
           <div>
             <input type="text" required id="teamName" placeholder="Enter the team name" minlength="4" maxlength="16">

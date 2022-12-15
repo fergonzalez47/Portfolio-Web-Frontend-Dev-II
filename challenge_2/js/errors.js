@@ -11,7 +11,6 @@ export default class Errors {
 
     displayError(message) {
         console.log(message);
-
         const divError = `
         <div id="box-error">
         <p>
