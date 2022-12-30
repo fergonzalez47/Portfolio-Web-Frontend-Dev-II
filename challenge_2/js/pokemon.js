@@ -2,9 +2,12 @@ import Errors from "./errors.js";
 import {
     writeInLocalStorage,
     getFromLocalStorage,
+    removeFromLocalStorage,
     modalContainer,
     modal,
+    goBack,
     saveTeam,
+    deleteTeam,
     hiddenModal
 } from "./utilities.js";
 
@@ -53,6 +56,7 @@ export class Pokemon {
         element.addEventListener("click", () => {
             if (pokemon) {
                 this.renderFullPokemon(pokemon);
+                console.log("You Clicked a Pokemon", pokemon.name);
             }
         });
 
@@ -282,7 +286,6 @@ export class Pokemon {
             }
         }
 
-        
         this.save.onclick = () => {
             const pokeRemoved = getFromLocalStorage("teams");
             pokeRemoved[indexParent].splice(index + 1 , 1);

@@ -1,7 +1,9 @@
 import {
   getData
 } from "./utilities.js";
-import {Pokemon} from "./pokemon.js";
+import {
+  Pokemon
+} from "./pokemon.js";
 import {
   pageMenu
 } from "./initMenu.js";

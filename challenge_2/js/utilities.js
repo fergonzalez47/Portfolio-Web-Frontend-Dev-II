@@ -17,6 +17,7 @@ export function hiddenModal() {
     }, 200);
 }
 
+
 export async function ToJSON(params) {
     try {
         const response = await fetch(params);
@@ -30,6 +31,7 @@ export async function ToJSON(params) {
          console.log(error);
     }
 }
+
 
 export function getData(dataApi) {
     return ToJSON(dataApi);
